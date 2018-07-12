@@ -1,5 +1,7 @@
 par(mfrow = c(2,2), mar=c(4,4,1,0), oma=c(0,0,0,0))
 
+sub_data <- readr::read_delim("./sub_data.txt", delim = ";")
+
 plot(sub_data$Global_active_power ~ sub_data$DateTime, 
      type = "l",
      xlab = "",
